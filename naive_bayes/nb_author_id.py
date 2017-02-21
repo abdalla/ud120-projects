@@ -21,8 +21,7 @@ from email_preprocess import preprocess
 # labels_train and labels_test are the corresponding item labels
 features_train, features_test, labels_train, labels_test = preprocess()
 
-########################################################
-### your code goes here ###
+
 from sklearn.naive_bayes import GaussianNB
 
 clf = GaussianNB()
@@ -43,5 +42,3 @@ print "Accuracy found: {:.4f}".format(accuracy_score(pred, labels_test))
 
 
 print accuracy
-
-#########################################################
